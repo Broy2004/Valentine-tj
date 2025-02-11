@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monthsary Interaction</title>
+</head>
+<body>
+    <script>
+        function showMessage(message) {
+            alert(message);
+        }
+
+        function promptForPassword() {
+            const password = prompt("Type yes to say yes HAHA.");
+
+            if (password === "yes") {
+                showMessage("Happy Valentines Mahal!");
+            } else {
+                showMessage("Mali :(. Hays!");
+            }
+        }
+
+        function main() {
+            const choice1 = confirm("Will you be my Valentine? Tap Ok to continue Mahal.");
+            
+            if (choice1) {
+                promptForPassword();
+            } else {
+                const choice2 = confirm("2. Sabi ko ok for yes hindi cancel :( hindi mo na ako love.");
+
+                if (choice2) {
+                    showMessage("ulitin mo hmmph");
+                } else {
+                    showMessage("YAY! I Love You So Much!");
+                }
+            }
+        }
+
+        main();
+    </script>
+</body>
+</html>
